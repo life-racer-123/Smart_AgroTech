@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Visualization</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="static/login.js" async> </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+    body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  </style>
+  </head>
+  <body>
+  
+  <div>
+    <center>
+    <div class="col-md-12" style="margin-top: 200px;">
+        <div class="col-md-6 jumbotron block bg-dark">
+          <center>
+      
+          <h1><strong class="text-success">Data Visualization</strong></h1>
+          <div class="row">
+            <form action="/graph">
+              <input type="submit" class="btn btn-outline-danger" style="margin-left: 80px; margin-top: 20px;" id="sub" value="Tempreture">
+            </form>
+            <form action="/humidity">
+              <input type="submit" class="btn btn-outline-warning" style="margin-left: 80px; margin-top: 20px;" id="sub-1" value="Humidity">
+            </form>
+            <form action="/moisture">
+              <input type="submit" class="btn btn-outline-info" style="margin-left: 80px; margin-top: 20px;" id="sub" value="Moisture">
+            </form>
+            </div>
+           </center>
+        </div>
+      </div>
+      </center>
+    </div> 
+  </body>

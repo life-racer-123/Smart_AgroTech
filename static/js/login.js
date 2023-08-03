@@ -1,0 +1,9 @@
+$("#signup_div").hide();
+$("#signup").click(function(){
+    $("#login_div").hide();
+    $("#signup_div").show();
+});
+$("#login").click(function(){
+    $("#login_div").show();
+    $("#signup_div").hide();
+});
